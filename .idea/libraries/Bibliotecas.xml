@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Bibliotecas">
+    <CLASSES>
+      <root url="file://C:/AulaJava/Cursos Udemy/Bibliotecas" />
+      <root url="jar://C:/AulaJava/Cursos Udemy/Bibliotecas/mysql-connector-java-8.0.18/mysql-connector-java-8.0.18.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://C:/AulaJava/Cursos Udemy/Bibliotecas" />
+    </SOURCES>
+    <jarDirectory url="file://C:/AulaJava/Cursos Udemy/Bibliotecas" recursive="false" />
+    <jarDirectory url="file://C:/AulaJava/Cursos Udemy/Bibliotecas" recursive="false" type="SOURCES" />
+  </library>
+</component>
