@@ -25,6 +25,11 @@ public class Program {
             System.out.println(obj);
         }
 
+        System.out.println("\n=== Teste nº3: Departament findAll ====");
+        list = sellerDao.findAll();
+        for (Seller obj : list) {
+            System.out.println(obj);
+        }
 
     }
 }
