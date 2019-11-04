@@ -5,12 +5,13 @@ import model.entities.Seller;
 import modeo.dao.DaoFactory;
 import modeo.dao.SellerDao;
 
+import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
 
 public class Program {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws SQLException {
 
         SellerDao sellerDao = DaoFactory.createSellerDao();
 
@@ -31,5 +32,9 @@ public class Program {
             System.out.println(obj);
         }
 
+        System.out.println("\n=== Teste nº4: Seller Insert ====");
+        Seller newSeller = new Seller(1, "Matheus", "matheus@gmail.com", new Date(), 4000.0, departament);
+        sellerDao.insert(newSeller);
+        System.out.println("Insert "+ newSeller.getId() +" realizado com sucesso");
     }
 }
