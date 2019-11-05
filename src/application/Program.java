@@ -8,10 +8,13 @@ import modeo.dao.SellerDao;
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 public class Program {
 
     public static void main(String[] args) throws SQLException {
+
+        Scanner sc = new Scanner(System.in);
 
         SellerDao sellerDao = DaoFactory.createSellerDao();
 
@@ -43,5 +46,13 @@ public class Program {
         seller.setName("Martha");
         sellerDao.update(seller);
         System.out.println("Atualização "+ seller +" realizado com sucesso");
+
+        System.out.println("\n=== Teste nº6: Seller delete ====");
+        System.out.println("Digite o id que será deletado ");
+        int id = sc.nextInt();
+        sellerDao.deleteById(id);
+        System.out.println("id deletado comsucesso!");
+
+        sc.close();
     }
 }
